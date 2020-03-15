@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.FrontView.as_view()),
+    path('doctor/',include('doctorapp.urls')),
     path('hospital/',include('hospitalapp.urls')),
     path('patient/',include('patientapp.urls')),
     path('medical/',include('medicalapp.urls')),

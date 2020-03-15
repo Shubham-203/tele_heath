@@ -4,4 +4,5 @@ from django import forms
 class MedicalForm(forms.ModelForm):
     class Meta:
         model = Medical
-        fields = '__all__'
+        # fields = '__all__'
+        exclude=['medicine_file']

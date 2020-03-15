@@ -4,4 +4,5 @@ from django import forms
 class DoctorForm(forms.ModelForm):
     class Meta:
         model = Doctor
-        fields = '__all__'
+        exclude= ['doctor_image']
+        # fields = '__all__'
