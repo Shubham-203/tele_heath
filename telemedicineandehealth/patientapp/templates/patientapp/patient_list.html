@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table border="1px">
+      <thead>
+        <th>patient name</th>
+        <th>patient hospital</th>
+        <th>patient_contact</th>
+      </thead>
+      {%for x in patient_list%}
+      <tr>
+        <td>{{x.patient_name}}</td>
+        <td>{{x.patient_hospital}}</td>
+        <td>{{x.patient_contact}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html>
